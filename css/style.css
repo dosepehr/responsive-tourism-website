@@ -12,16 +12,65 @@
     font-display: swap;
 }
 
+:root {
+    --main-red: #FF4A52;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     outline: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
-ul{
+
+ul {
     list-style: none;
 }
 
+header {
+    margin: 0 auto;
+    width: 85%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: auto;
+    height: 100%;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav ul li a{
+    color: #000;
+    transition: all 0.3s ease;
+    font-size: 1.3rem;
+}
+
+nav ul li a:hover {
+    color: var(--main-red);
+}
+
+nav {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.search {
+    background-color: var(--main-red);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
