@@ -15,6 +15,7 @@
 :root {
     --main-red: #FF4A52;
     --main-green: #1EC6B6;
+    --main-dark-blue: #040E27;
     ;
 }
 
@@ -136,10 +137,51 @@ nav {
     color: #fff;
 }
 
-.hero button{
+.hero button {
     padding: 10px 20px;
     margin: 100px auto;
     font-size: 1.2rem;
     font-weight: 400;
     display: block;
+}
+
+/* where to go */
+
+.where {
+    background-color: var(--main-dark-blue);
+    display: flex;
+}
+
+.where .col-md-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.where h2 {
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.where input {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #363E52;
+    border-radius: 5px;
+    margin: 10px 10px;
+    padding: 17px 50px;
+    color: white;
+    outline: 0;
+}
+
+.where button {
+    font-size: 16px;
+    padding: 17px 39px;
+}
+
+@media screen and (max-width: 768px) {
+    .where h2{
+        margin-top: 50px;
+    }
 }
