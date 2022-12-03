@@ -347,7 +347,56 @@ nav {
     background-color: var(--main-green);
 }
 
+/* video section */
 
+.video {
+    background: linear-gradient(to bottom, #040e274a 0%, #040e274a 100%), url('../images/video.png');
+    width: 100%;
+    height: 600px;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: center center;
+}
+
+.video p {
+    font-family: "Nothing You Could Do", cursive;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 30px;
+    padding-top: 0px;
+    font-size: calc(1.7rem + 7vw);
+}
+
+.video i {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
 @media (max-width:992px) {
     .sub-input {
         flex-direction: column !important;
