@@ -231,6 +231,7 @@ nav {
     margin-left: 30px;
     margin-bottom: 20px;
     align-items: baseline;
+    /*! FIXME */
 }
 
 .desc span {
@@ -265,7 +266,7 @@ nav {
 }
 
 .countries {
-    padding-top: 50px;
+    padding: 50px;
 }
 
 .item {
@@ -276,12 +277,109 @@ nav {
     transform: translateY(-10px);
 }
 
+/* subscribe */
+.subscribe {
+    background: linear-gradient(to bottom, #040e27b3 0%, #040e27b3 100%), url('../images/newsletter.png');
+    background-position: 65% 65%;
+    background-size: cover;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
+.subscribe .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe .row h2 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.subscribe .row p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #AAB1B7;
+}
+
+.subscribe .row input {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 10px;
+    padding: 15px 50px;
+    color: #000;
+    outline: 0;
+}
+
+.sub-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-input .col-4 {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.sub-input button {
+    font-size: 16px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: none;
+    outline: 0;
+    background-color: var(--main-red);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.sub-input button:hover {
+    background-color: var(--main-green);
+}
 
 
-@media screen and (max-width: 768px) {
-    .where h2 {
-        margin-top: 50px;
+@media (max-width:992px) {
+    .sub-input {
+        flex-direction: column !important;
+    }
+
+    .sub-input .col-4,.sub-input .col-8 {
+        margin-left: 0px !important;
+        width: 100%;
+    }
+    
+    .sub-input button {
+        width: 100%;
+    }
+    
+    .sub-input input {
+        width: 100%;
+    }
+    .subscribe .row input{
+        margin: 10px 0;
+    }
+}
+@media (min-width:768px) and (max-width:992px) {
+    .sub-input .col-4,.sub-input .col-8 {
+        margin-left: 0px !important;
+        width: 50%;
+    }
+    
+    .subscribe .row input{
+        margin: 10px 0;
+        width: 100%;
+    }
+    
+    .subscribe .row input {
+        width: 100%;
     }
 }
