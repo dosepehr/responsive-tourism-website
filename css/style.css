@@ -92,7 +92,7 @@ nav ul li a:hover {
 /* menu */
 
 .menu {
-    width: 40%;
+    width: 45%;
     height: 100vh;
     background-color: var(--main-dark-blue);
     position: fixed;
